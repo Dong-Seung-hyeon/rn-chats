@@ -17,21 +17,3 @@ const App = () => {
 };
 
 export default App;
-
-/*
-
-   return (
-      <ThemeProvider theme={theme}>
-         <ProgressProvider>
-            <UserProvider>
-               <StatusBar
-                  backgroundColor={theme.background}
-                  barStyle="dark-content"
-               />
-               <Navigation />
-            </UserProvider>
-         </ProgressProvider>
-      </ThemeProvider>
-   );
-};
-*/

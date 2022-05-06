@@ -4,9 +4,9 @@ import axios from 'axios';
 const host = 'http://localhost:8080';
 
 export async function register(
-  login_id,
-  login_pw
-  confirm_pw,
+  id,
+  password,
+  confirmPassword,
   phoneNum,
   navigation
 ) {
@@ -47,7 +47,7 @@ export async function register(
   }
 }
 
-export async function login(login_id, login_pw, navigation) {
+export async function login(id, password, navigation) {
   try {
     const result = await axios({
       method: 'post',
