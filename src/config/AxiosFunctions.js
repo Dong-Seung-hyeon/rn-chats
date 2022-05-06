@@ -1,24 +1,28 @@
 import { Alert, AsyncStorage } from 'react-native';
 import axios from 'axios';
 
-const host = 'http://localhost:9000';
+const host = 'http://localhost:8080';
 
 export async function register(
-  id,
-  password,
-  confirmPassword,
-  phonenum,
+  login_id,
+  login_pw
+  confirm_pw,
+  phoneNum,
   navigation
 ) {
   try {
     const result = await axios({
       method: 'post',
-      url: host + '/api/v1/log-in',
+      url: host + '/api/v1/users/sign-up',
       data: {
-        id: id,
-        password: password,
-        confirmPassword: confirmPassword,
-        phonenum: phonenum,
+        nickname: 'string',
+        phoneNum: 'string',
+        login_id: 'string',
+        login_pw: 'string',
+        // id: id,
+        // password: password,
+        // confirmPassword: confirmPassword,
+        // phonenum: phonenum,
       },
     });
 
@@ -43,14 +47,16 @@ export async function register(
   }
 }
 
-export async function login(id, password, navigation) {
+export async function login(login_id, login_pw, navigation) {
   try {
     const result = await axios({
       method: 'post',
-      url: host + '/api/v1/users/sign-up',
+      url: host + '/api/v1/users/log-in',
       data: {
-        id: id,
-        password: password,
+        login_id: 'string',
+        login_pw: 'string',
+        // id: id,
+        // password: password,
       },
     });
 
