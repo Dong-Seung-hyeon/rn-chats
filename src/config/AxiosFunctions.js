@@ -1,7 +1,8 @@
 import { Alert, AsyncStorage } from 'react-native';
 import axios from 'axios';
 
-const host = 'http://localhost:8080';
+const host = 'http://10.0.2.2:8080';
+// const host = 'http://localhost:8080';
 
 export async function register(
   id,
@@ -15,10 +16,10 @@ export async function register(
       method: 'post',
       url: host + '/api/v1/users/sign-up',
       data: {
-        nickname: 'string',
-        phoneNum: 'string',
-        login_id: 'string',
-        login_pw: 'string',
+        nickname: 'id',
+        phoneNum: 'phoneNum',
+        login_pw: 'password',
+        confirmPassword: 'password',
         // id: id,
         // password: password,
         // confirmPassword: confirmPassword,

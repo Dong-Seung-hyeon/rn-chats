@@ -1,14 +1,14 @@
 import { initializeApp } from 'firebase/app';
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyAZa98BWH1jGXMNvtTzD-wGf4Hbjbgkqh0',
-  authDomain: 'rn-chat-1f941.firebaseapp.com',
-  databaseURL: 'https://rn-chat-1f941-default-rtdb.firebaseio.com',
-  projectId: 'rn-chat-1f941',
-  storageBucket: 'rn-chat-1f941.appspot.com',
-  messagingSenderId: '293554822855',
-  appId: '1:293554822855:web:785a89c24b7ac7bb7768e2',
-  measurementId: 'G-KRKJKMVF9H',
+  apiKey: "AIzaSyDEs0axwTl8tSmT61jmxPmiUXd4dQyvdU4",
+  authDomain: "rn-catch-my-hand.firebaseapp.com",
+  projectId: "rn-catch-my-hand",
+  storageBucket: "rn-catch-my-hand.appspot.com",
+  messagingSenderId: "625604680970",
+  appId: "1:625604680970:web:d315f3d56e3dd4006f2ef3",
+  measurementId: "G-P8G9T0XJS3"
 };
 
 // init firebase app

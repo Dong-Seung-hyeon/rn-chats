@@ -72,10 +72,6 @@ const Signin = ({ navigation }) => {
     login(id, password, navigation);
   };
 
-  const goSignUp = () => {
-    navigation.navigate('SignUp');
-  };
-
   const _handleSigninBtnPress = async () => {
     try {
       spinner.start();
@@ -115,11 +111,11 @@ const Signin = ({ navigation }) => {
           placeholder="비밀번호를 입력하시오."
           returnKeyType="done"
           value={password}
-          onChangeText={setPassword}
+          onChangeText={_handlePasswordChange}
           isPassword={true}
-          onSubmitEditing={doSignIn}
+          onSubmitEditing={_handleSigninBtnPress}
         />
-        <Button title="로그인" onPress={doSignIn} disabled={disabled} />
+        <Button title="로그인" onPress={_handleSigninBtnPress} disabled={disabled} />
         <Button
           title="회원가입"
           onPress={() => navigation.navigate('Signup')}
